@@ -12,7 +12,7 @@ RSpec.describe Idea, type: :model do
     end
 
     it 'description consegue ser preenchido?' do
-      @idea.description = ''
+      @idea.description = 'built in function'
       expect(@idea.description).to eq('built in function')
     end
 
