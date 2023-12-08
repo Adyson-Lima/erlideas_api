@@ -20,4 +20,12 @@ RSpec.describe Api::V1::IdeasController, type: :controller do
     end
   end
 
+  describe 'POST /api/v1/ideas' do
+    it 'Consegue criar um idea e retornar status 201?' do
+      post :create, params: {idea: {name: 'process', description: 'semelhante a um objeto'}, format: :json}
+      expect(response.body).to include_json(name: 'process')
+      expect(response).to have_http_status(201)
+    end
+  end
+
 end
