@@ -28,4 +28,13 @@ RSpec.describe Api::V1::IdeasController, type: :controller do
     end
   end
 
+  describe 'PATCH /api/v1/ideas/id' do
+    it 'Consegue atualizar um idea e retornar status 200?' do
+      idea = Idea.last
+      patch :update, params: {idea: {name: 'guards', description: 'analise logica'}, id: idea.id}
+      expect(response.body).to include_json(name: 'guards')
+      expect(response).to have_http_status(200)
+    end
+  end
+
 end
