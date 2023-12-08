@@ -1,15 +1,15 @@
 # API REST "erlideas_api", desenvolvida em Ruby on Rails, com versionamento de recursos para treino de programação em Ruby on Rails.
 
 ## Endpoints da API
--GET: localhost/api/v1/erlideas
+-GET: localhost/api/v1/ideas
 
--GET: localhost/api/v1/erlideas/id
+-GET: localhost/api/v1/ideas/id
 
--POST: localhost/api/v1/erlideas
+-POST: localhost/api/v1/ideas
 
--PATCH: localhost/api/v1/erlideas/id
+-PATCH: localhost/api/v1/ideas/id
 
--DELETE: localhost/api/v1/erlideas/id
+-DELETE: localhost/api/v1/ideas/id
 
 # Tecnologias utilizadas
 
