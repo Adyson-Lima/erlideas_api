@@ -11,6 +11,11 @@ RSpec.describe Idea, type: :model do
       expect(@idea.name).to eq('bif')
     end
 
+    it 'description consegue ser preenchido?' do
+      @idea.description = ''
+      expect(@idea.description).to eq('built in function')
+    end
+
   end
 
 end
